@@ -1,6 +1,6 @@
 provider "aws" {
   region  = "ap-southeast-2"
-  profile = "default"
+  profile = "linhctk4"
 }
 
 terraform {
