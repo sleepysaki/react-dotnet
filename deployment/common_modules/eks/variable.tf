@@ -8,36 +8,6 @@ variable "kubernetes_version" {
   type        = string
 }
 
-variable "cluster_iam_role" {
-  description = "The IAM role to associate with the EKS cluster"
-  type        = string
-}
-
-variable "node_iam_role" {
-  description = "The IAM role to associate with the EKS worker nodes"
-  type        = string
-}
-
-variable "region" {
-    description = "AWS region"
-    type        = string
-}
-
-variable "cluster_name" {
-    description = "EKS cluster name"
-    type        = string
-}
-
-variable "cluster_role_arn" {
-    description = "IAM role ARN for EKS cluster"
-    type        = string
-}
-
-variable "node_role_arn" {
-    description = "IAM role ARN for EKS node group"
-    type        = string
-}
-
 variable "subnet_ids" {
     description = "List of subnet IDs for EKS"
     type        = list(string)
